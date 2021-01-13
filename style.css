@@ -15,84 +15,74 @@ Copyright Johann Lamine
 {
     font-family: 'Raleway_Black';
     src:url(font/static/Raleway-Black.ttf) format('truetype');
-    font-weight: bolder;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Raleway-Bold';
+    src:url(font/static/Raleway-Bold.ttf) format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 * {
    padding: 0em;
    margin: 0em; 
+   font-family: 'Raleway',Arial, Helvetica, sans-serif;
 }
 body {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-}
-h1 {
-    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-}
-#bloc_page {
-
-    width: 1340px;
     margin: auto;
-}
-
-#topsection {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-header {
-    width: 1340px;
-    height: 120px;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-
-}
-#titre_principal {
-    display: flex;
+    max-width: 1340px;
     align-items: center;
 }
+
+/* head*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin: auto;
+}
+header #logo {
+    margin-left: 4px;
+}
+
 /*navigation*/
 
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 435px;
 }
 nav ul {
     list-style-type: none;
     display: flex;
 }
-
-nav li {
-    margin-left: 40px;
-
-}
-
 nav a {
-    font-weight: normal;
     color: grey;
     text-decoration: none;
-    padding: 49px 28px 0px 28px;
+    padding: 48px 28px 0px 28px;
 }
-
 nav a:hover {
-    font-weight: normal;
     color: #0065fc;
-    border: 50px 0px 0px 0px transparent;
-    border-top: #0065fc solid;
-    padding: 49px 28px 0px 28px;
+    border-top: 4px #0065fc solid;
 }
 nav #inscription {
-    font-weight: bold;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
     color: #0065fc;
+    border: none;
 }
 nav #inscription:hover {
     border-top: transparent;
 }
+/*body*/
+h1 {
+    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
 /* Filtre*/
 
 .Filtres {
@@ -158,11 +148,14 @@ nav #inscription:hover {
     border-radius: 50%;
 }
 
+/*Footer*/
 
-
-
-footer {
+#back {
+    width: 100%;
+    margin: 0em;
     background-color: #F2F2F2;
+}
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
