@@ -30,9 +30,6 @@ Copyright Johann Lamine
    margin: 0em; 
    font-family: 'Raleway',Arial, Helvetica, sans-serif;
 }
-body {
-
-}
 section {
     margin: auto;
     max-width: 1340px;
@@ -171,13 +168,8 @@ footer #menu {
     align-items: flex-start;
 }
 footer div {
-    display: flex;
-    max-width: 1340px;
     padding-top: 20px;
     margin-right: auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
 }
 footer ul {
     display: flex;
