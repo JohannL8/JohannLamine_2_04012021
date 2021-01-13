@@ -31,19 +31,22 @@ Copyright Johann Lamine
    font-family: 'Raleway',Arial, Helvetica, sans-serif;
 }
 body {
+
+}
+section {
     margin: auto;
     max-width: 1340px;
-    align-items: center;
 }
 
 /* head*/
 
 header {
     display: flex;
+    margin: auto;
+    max-width: 1340px;
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    margin: auto;
 }
 header #logo {
     margin-left: 4px;
@@ -150,26 +153,37 @@ h1 {
 
 /*Footer*/
 
-#back {
-    width: 100%;
-    margin: 0em;
-    background-color: #F2F2F2;
-}
+
 footer {
+    height: 217px;
+    position: relative;
+    background-color: #f2f2f2;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+footer #menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    max-width: 1340px;
+    margin: auto;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 footer div {
     display: flex;
+    max-width: 1340px;
+    padding-top: 20px;
+    margin-right: auto;
     flex-direction: row;
-    width: 80%;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 footer ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    align-content: flex-start;
 }
 footer a {
     font-size: 0.8em;
