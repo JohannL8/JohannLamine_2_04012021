@@ -215,7 +215,29 @@ article .box div {
     padding: auto;
 
 }
-
+article img {
+    object-fit: cover;
+    width: 236px;
+    max-height: 114px;
+    border-radius: 17px 17px 0px 0px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+aside .box div {
+    width: 344px;
+    height: 144px;
+    background-color: white;
+    border-radius: 17px;
+    margin-bottom: 33px;
+}
+aside img {
+    object-fit: cover;
+    width: 127px;
+    height: 134px;
+    border-radius: 17px 0 0 17px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
 
 
 /*Footer*/
