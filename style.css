@@ -29,10 +29,14 @@ Copyright Johann Lamine
    padding: 0em;
    margin: 0em; 
    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+   text-decoration: none;
 }
 section {
     margin: auto;
     max-width: 1340px;
+}
+a {
+    color: black;
 }
 
 /* head*/
@@ -206,13 +210,38 @@ article .box {
     align-content: space-between;
     justify-content: space-between;
 }
-article .box div {
+#box1, #box2, #box3, #box4, #box5, #box6 {
     width: 246px;
     height: 199px;
     margin-bottom: 30px;
     background-color: white;
     border-radius: 17px;
-    padding: auto;
+    box-shadow: 2px 2px 2px #E3E3E3;
+}
+#box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover {
+    background-color: #DEEBFF;
+}
+.box h2, .box p, .box {
+    margin-left: 16px;
+}
+article h2 {
+    font-size: 1em;
+    margin-top: 8px;
+    max-width: 214px;
+}
+article p {
+    font-size: 0.9em;
+    margin-top: auto;
+    max-width: 214px;
+}
+article .star {
+    font-size: 0.8em;
+    color: #0065fc;
+    margin: 7px auto auto 16px;
+    width: 50%;
+}
+#box1 i:nth-child(5), #box3 i:nth-child(5), #box4 i:nth-child(4), #box4 i:nth-child(5), #box5 i:nth-child(5) {
+    color: #F2F2F2;
 
 }
 article img {
@@ -223,12 +252,26 @@ article img {
     margin-top: 5px;
     margin-left: 5px;
 }
-aside .box div {
+.more {
+    margin-top: 20px;
+}
+/*populaire*/
+
+#box7, #box8, #box9 {
     width: 344px;
     height: 144px;
     background-color: white;
     border-radius: 17px;
     margin-bottom: 33px;
+    box-shadow: 2px 2px 2px #E3E3E3;
+    display:flex;
+    overflow: hidden;
+}
+#box7:hover, #box8:hover, #box9:hover {
+    background-color: #DEEBFF;
+}
+#box8 i:nth-child(5), #box9 i:nth-child(5) {
+    color: #F2F2F2;
 }
 aside img {
     object-fit: cover;
@@ -238,7 +281,25 @@ aside img {
     margin-top: 5px;
     margin-left: 5px;
 }
-
+aside .infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 211px;
+    height: 144px;
+    align-content: center;
+}
+aside h2 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+aside .star {
+    font-size: 0.8em;
+    color: #0065fc;
+    margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: 14px;
+}
 
 /*Footer*/
 footer {
