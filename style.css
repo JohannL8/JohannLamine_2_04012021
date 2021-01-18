@@ -126,6 +126,7 @@ h2 {
 }
 #search #bouton {
     font-size: 18px;
+    cursor: pointer;
     margin-left: -5px;
     width: 134px;
     line-height: 47px;
@@ -289,9 +290,8 @@ article .star {
     margin: 7px auto auto 16px;
     width: 50%;
 }
-#box1 i:nth-child(5), #box3 i:nth-child(5), #box4 i:nth-child(4), #box4 i:nth-child(5), #box5 i:nth-child(5) {
+.fa-star.grey {
     color: #F2F2F2;
-
 }
 article img {
     object-fit: cover;
@@ -319,7 +319,7 @@ article img {
 #box7:hover, #box8:hover, #box9:hover {
     background-color: #DEEBFF;
 }
-#box8 i:nth-child(5), #box9 i:nth-child(5) {
+.fa-star.grey {
     color: #F2F2F2;
 }
 aside img {
@@ -446,4 +446,12 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: black;
+}
+/*test star hover*/
+
+.star:hover .fa-star {
+    color: #0065FC;
+}
+.star .fa-star:hover ~ .fa-star {
+    color: #F2F2F2;
 }
