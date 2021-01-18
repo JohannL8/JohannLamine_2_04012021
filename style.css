@@ -83,7 +83,7 @@ nav #inscription {
 h1 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
     font-size: 1.4em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 h2 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
@@ -92,6 +92,51 @@ h2 {
 
 #Section0 {
     margin-bottom: 40px;
+}
+/*recherche*/
+.research {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    height: 51px;
+    align-content: center;
+}
+#search i {
+    color: black;
+    background-color: #F2F2F2;
+    width: 47px;
+    line-height: 47px;
+    font-size: 18px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 13px 0 0 13px;
+    align-items: center;
+    text-align: center;
+}
+#search #recherche {
+    line-height: 47px;
+    width: 234px;
+    font-size: 18px;
+    padding-left: 16px;
+    margin-left: -5px;
+    border: 2px #F2F2F2 solid;
+    align-items: center;
+    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+    color: black;
+}
+#search #bouton {
+    font-size: 18px;
+    margin-left: -5px;
+    width: 134px;
+    line-height: 47px;
+    background-color: #0065fc;
+    border: 2px #0065FC solid;
+    border-radius: 0 17px 17px 0;
+    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+    color: white;
+}
+#search #bouton:hover {
+    text-shadow: 0px 0px 5px #DEEBFF;
 }
 
 /* Filtre*/
@@ -103,9 +148,11 @@ h2 {
     height: 50px;
     text-align: center;
     margin-left: 13px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .Filtres .titre {
-    font-family: 'Raleway_Black', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
     font-size: 0.8em;
     text-align: left;
 }
@@ -114,14 +161,14 @@ h2 {
 
 }
 .Filtres p {
-    font-family: 'Raleway_Black', Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
 .Filtres a {
     align-items: center;
     text-decoration: none;
-    font-family: 'Raleway_Black', Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1em;
     width: 3em;
     color: black;
     border: 2px #f2f2f2 solid;
@@ -133,7 +180,7 @@ h2 {
 }
 .Filtres a:hover {
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1em;
     width: 3em;
     color: black;
     background-color: #DEEBFF;
@@ -152,7 +199,6 @@ h2 {
     line-height: 3em;
     border-radius: 50%;
     background: #DEEBFF;
-    margin-left: -1px;
 }
 #infobulle i {
     align-items: center;
@@ -210,6 +256,9 @@ article .box {
     align-content: space-between;
     justify-content: space-between;
 }
+article h1, aside h1 {
+    margin-bottom: 20px;
+}
 #box1, #box2, #box3, #box4, #box5, #box6 {
     width: 246px;
     height: 199px;
@@ -221,7 +270,7 @@ article .box {
 #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover {
     background-color: #DEEBFF;
 }
-.box h2, .box p, .box {
+.box h2, .box p {
     margin-left: 16px;
 }
 article h2 {
@@ -306,6 +355,9 @@ aside .star {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 60px;
+}
+#section2 h1 {
+    margin-bottom: 20px;
 }
 .colonne1, .colonne2 {
     display: flex;
