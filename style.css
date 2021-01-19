@@ -95,6 +95,7 @@ h2 {
 }
 /*recherche*/
 .research {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: center;
