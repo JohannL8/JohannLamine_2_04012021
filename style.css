@@ -308,13 +308,14 @@ article img {
 /*populaire*/
 
 #box7, #box8, #box9 {
-    width: 344px;
+    max-width: 344px;
     height: 144px;
     background-color: white;
     border-radius: 17px;
     margin-bottom: 33px;
     box-shadow: 2px 2px 2px #E3E3E3;
     display:flex;
+    align-items: center;
     overflow: hidden;
 }
 #box7:hover, #box8:hover, #box9:hover {
@@ -456,3 +457,45 @@ footer a:hover {
 .star .fa-star:hover ~ .fa-star {
     color: #F2F2F2;
 }
+
+/*écran moyen*/
+
+@media all and (min-width: 1100px) and (max-width: 1400px) {
+
+    body:not(footer) {
+        max-width: 1024px;
+        margin: auto;
+    }
+    #Section1 {
+        height: 850px;
+    }
+    aside { 
+        padding-left: 20px;
+    }
+    #box7, #box8, #box9 {
+        margin-right: 20px;
+    }
+
+    .activ {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .activ1, .activ2 {
+        max-width: 1024px;
+    }
+    .colonne2 {
+        flex-direction: row;
+    }
+    .activ1 {
+        margin-bottom: 40px;
+    }
+    #box10, #box11, #box12, #box13, #box14, #box15 {
+        height: 237px;
+        margin-right: 45px;
+    }
+    #box10 img, #box11 img, #box12 img, #box13 img, #box14 img, #box15 img {
+        height: 181px;
+    }
+
+}
+
