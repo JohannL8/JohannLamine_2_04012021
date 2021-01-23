@@ -45,24 +45,18 @@ header {
     display: flex;
     margin: auto;
     max-width: 1340px;
-    justify-content: space-between;
     align-items: center;
     height: 120px;
+    justify-content: space-between;
 }
 header #logo {
     margin-left: 4px;
 }
 
 /*navigation*/
-
-nav {
+#nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav ul {
-    list-style-type: none;
-    display: flex;
+    flex-wrap: nowrap;
 }
 nav a {
     color: grey;
@@ -73,10 +67,13 @@ nav a:hover {
     color: #0065fc;
     border-top: 4px #0065fc solid;
 }
-nav #inscription {
+.inscription {
     font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
-    color: #0065fc;
-    border: none;
+    color: #0065FC;
+    margin-left: 28px;
+}
+.inscription:hover {
+    border-top: none;
 }
 
 /*body*/
@@ -137,6 +134,7 @@ h2 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
     color: white;
 }
+
 #search #bouton:hover {
     text-shadow: 0px 0px 5px #DEEBFF;
 }
@@ -462,7 +460,7 @@ footer a:hover {
 
 @media all and (min-width: 1100px) and (max-width: 1400px) {
 
-    body:not(footer) {
+    body {
         max-width: 1024px;
         margin: auto;
     }
@@ -496,6 +494,35 @@ footer a:hover {
     #box10 img, #box11 img, #box12 img, #box13 img, #box14 img, #box15 img {
         height: 181px;
     }
+
+}
+@media all and (max-width:1100px) {
+
+    body {
+        max-width: 375px;
+        margin: auto;
+    }
+
+
+    /*recherche*/
+
+    #search #bouton {
+        display: none;
+    }
+    #search button {
+        display: contents;
+        cursor: pointer;
+        margin-left: -5px;
+        width: 134px;
+        line-height: 47px;
+        background-color: #0065fc;
+        border: 2px #0065FC solid;
+        border-radius: 0 17px 17px 0;
+        font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+
 
 }
 
