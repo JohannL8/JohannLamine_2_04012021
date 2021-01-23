@@ -591,12 +591,20 @@ footer a:hover {
         flex-direction: column-reverse;
         height: auto;
     }
-    #Section1 aside {
-        width: 375px;
+
+    /*hebergement*/
+
+    #Section1 article {
+        width: auto;
         padding: 20px 20px;
+        background: transparent;
     }
-    aside {
-        width: 375px;
+    /*populaire*/
+
+    #Section1 aside {
+        width: auto;
+        padding: 20px 20px;
+        border-radius: 0px;
     }
     #box7, #box8, #box9 {
         width: 334px;
@@ -604,7 +612,27 @@ footer a:hover {
     aside .infobox {
         width: 202px;
     }
+    aside .box {
+        max-width: 334px;
+    }
+    aside .titre {
+        max-width: 334px;
+    }
 
 
+    .activ, .activ1, .activ2 {
+        flex-direction: column;
+    }
+    .activ1, .activ2 {
+        width: 375px;
+    }
+    .colonne1, .colonne2 {
+        width: 375px;
+        flex-direction: column;
+    }
+    
+    footer #menu {
+        flex-direction: column;
+    }
 }
 
