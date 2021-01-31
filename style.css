@@ -138,7 +138,9 @@ h2 {
 #search #bouton:hover {
     text-shadow: 0px 0px 5px #DEEBFF;
 }
-
+button {
+    display: none;
+}
 /* Filtre*/
 
 .Filtres {
@@ -503,7 +505,7 @@ footer a:hover {
 @media all and (max-width:1100px) {
 
     body {
-        max-width: 375px;
+        width: 100%;
         margin: auto;
     }
 
@@ -512,13 +514,18 @@ footer a:hover {
     header {
         display: flex;
         justify-content: space-between;
-        height: 165px;
+        height: 132px;
+        margin-bottom: 36px;
         }
+    header #logo {
+        margin-left: 20px;
+    }
     #logo {
         float: left;
         align-self: flex-start;
         position: absolute;
         margin-top: 20px;
+        margin-left: 20px;
     } 
 
     #nav {
@@ -526,21 +533,21 @@ footer a:hover {
         flex-direction: column-reverse;
         flex-wrap: wrap;
         align-items: flex-end;
-        width: 375px;
+        width: 100%;
         position: relative;
         order: 1;
 
     }
     nav {
         display: flex;
-        width: 375px;
+        width: 100%;
         justify-content: space-around;
         text-align: center;
     }
     nav a {
         padding-top: 17px;
         padding-bottom: 17px;
-        width: 187.5px;
+        width: 50%;
         justify-content: center;
         border-bottom: 3px #F2F2F2 solid;
     }
@@ -550,16 +557,21 @@ footer a:hover {
     }
     .inscription {
         height: 45px;
+        margin-right: 20px;
+        margin-top: 30px;
         justify-self: flex-start;
     }
-
+    /*section 0*/
+    #Section0 {
+        width: 90%;
+    }
 
     /*recherche*/
 
     #search #bouton {
         display: none;
     }
-    #search button {
+    button {
         display: contents;
         cursor: pointer;
         margin-left: -5px;
@@ -576,6 +588,7 @@ footer a:hover {
 
     .Filtres {
         height: auto;
+        margin-left: 0%;
     }
     #titre {
         justify-content: flex-start;
@@ -584,6 +597,9 @@ footer a:hover {
     }
     #titre p {
         text-align: left;
+    }
+    #infobulle i {
+        margin-left: 0%;
     }
 
     /*section1*/
@@ -608,13 +624,16 @@ footer a:hover {
         border-radius: 0px;
     }
     #box7, #box8, #box9 {
-        width: 334px;
+        width: 90%;
     }
     aside .infobox {
         width: 202px;
     }
     aside .box {
-        max-width: 334px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 90%;
     }
     aside .titre {
         max-width: 334px;
