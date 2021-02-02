@@ -575,7 +575,7 @@ footer a:hover {
     #search .fa-search {
         display:contents;
     }
-    #search p {
+    #search span {
         display: none;
     }
     button {
