@@ -404,7 +404,7 @@ aside .star {
     height: 390px;
 }
 #box11 img {
-    max-height: 181px;
+    height: 181px;
 }
 #box12 img {
     height: 110px;
@@ -612,6 +612,7 @@ footer a:hover {
     #Section1 {
         flex-direction: column-reverse;
         height: auto;
+        margin-bottom: 0px;
     }
 
     /*populaire*/
@@ -668,38 +669,44 @@ footer a:hover {
 
     /*activités*/
 
+    #section2 {
+        padding: 20px;
+    }
+    #activites {
+        margin: 0px;
+    }
     .activ, .activ1, .activ2 {
         flex-direction: column;
+        margin-bottom: 0px;
     }
     .activ1, .activ2 {
-        width: 375px;
+        width: 100%;
+    }
+    .activ h2 {
+        margin-top: 5px;
     }
     .colonne1, .colonne2 {
-        width: 375px;
-        flex-direction: column;
         align-items: center;
     }
     #box10, #box11, #box12, #box13, #box14, #box15 {
-        width: 335px;
+        width: 100%;
+        max-width: 500px;
         height: 190px;
         margin-bottom: 20px;
     }
-    #activites {
-        margin-left: 20px;
-    }
     #box10 img, #box11 img, #box12 img, #box13 img, #box14 img, #box15 img {
-        width: 335px;
+        width: 98%;
+        margin: 1%;
         height: 135px;
     }
 
     /*footer*/
     
     footer {
-        height: 486px;
+        height: auto;
     }
     footer #menu {
         flex-direction: column;
-        margin: 50px 30px;
     }
     #menu div {
         margin-bottom: 50px;
