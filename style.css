@@ -93,14 +93,8 @@ h2 {
 /*recherche*/
 .research {
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-start;
-    height: 51px;
-    align-content: center;
 }
-#search i {
+#search .fa-map-marker-alt {
     color: black;
     background-color: #F2F2F2;
     width: 47px;
@@ -122,7 +116,12 @@ h2 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
     color: black;
 }
-#search #bouton {
+
+#search #bouton:hover {
+    text-shadow: 0px 0px 5px #DEEBFF;
+}
+button {
+
     font-size: 18px;
     cursor: pointer;
     margin-left: -5px;
@@ -134,11 +133,7 @@ h2 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
     color: white;
 }
-
-#search #bouton:hover {
-    text-shadow: 0px 0px 5px #DEEBFF;
-}
-button {
+#search .fa-search {
     display: none;
 }
 /* Filtre*/
@@ -573,20 +568,20 @@ footer a:hover {
 
     /*recherche*/
 
-    #search #bouton {
+    #search {
+        display: flex;
+        justify-content: center;
+    }
+    #search .fa-search {
+        display:contents;
+    }
+    #search p {
         display: none;
     }
     button {
-        display: contents;
-        cursor: pointer;
-        margin-left: -5px;
-        width: 134px;
-        line-height: 47px;
-        background-color: #0065fc;
-        border: 2px #0065FC solid;
-        border-radius: 0 17px 17px 0;
-        font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
-        color: white;
+        width: 50px;
+        margin-left: -15px;
+        border-radius: 17px;
     }
 
     /*filtres*/
@@ -628,7 +623,8 @@ footer a:hover {
     aside .box {
         display: flex;
         flex-direction: column;
-        align-content: center;
+        max-width: 500px;
+        margin: auto;
     }
     aside img {
         width: 40%;
