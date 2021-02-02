@@ -626,9 +626,10 @@ footer a:hover {
     #Section1 aside {
         width: auto;
         border-radius: 0px;
+        padding: 20px;
     }
     #box7, #box8, #box9 {
-        max-width: 90%;
+        max-width: 100%;
     }
     aside .box {
         display: flex;
@@ -639,7 +640,7 @@ footer a:hover {
         width: 40%;
     }
     aside .titre {
-        max-width: 90%;
+        max-width: 100%;
     }
     aside .infobox {
         width: 60%;
