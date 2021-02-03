@@ -45,24 +45,18 @@ header {
     display: flex;
     margin: auto;
     max-width: 1340px;
-    justify-content: space-between;
     align-items: center;
     height: 120px;
+    justify-content: space-between;
 }
 header #logo {
     margin-left: 4px;
 }
 
 /*navigation*/
-
-nav {
+#nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav ul {
-    list-style-type: none;
-    display: flex;
+    flex-wrap: nowrap;
 }
 nav a {
     color: grey;
@@ -73,10 +67,13 @@ nav a:hover {
     color: #0065fc;
     border-top: 4px #0065fc solid;
 }
-nav #inscription {
+.inscription {
     font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
-    color: #0065fc;
-    border: none;
+    color: #0065FC;
+    margin-left: 28px;
+}
+.inscription:hover {
+    border-top: none;
 }
 
 /*body*/
@@ -96,14 +93,8 @@ h2 {
 /*recherche*/
 .research {
     margin-top: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-start;
-    height: 51px;
-    align-content: center;
 }
-#search i {
+#search .fa-map-marker-alt {
     color: black;
     background-color: #F2F2F2;
     width: 47px;
@@ -125,7 +116,12 @@ h2 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
     color: black;
 }
-#search #bouton {
+
+#search #bouton:hover {
+    text-shadow: 0px 0px 5px #DEEBFF;
+}
+button {
+
     font-size: 18px;
     cursor: pointer;
     margin-left: -5px;
@@ -137,16 +133,16 @@ h2 {
     font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
     color: white;
 }
-#search #bouton:hover {
-    text-shadow: 0px 0px 5px #DEEBFF;
+#search .fa-search {
+    display: none;
 }
-
 /* Filtre*/
 
 .Filtres {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     height: 50px;
     text-align: center;
     margin-left: 13px;
@@ -160,6 +156,7 @@ h2 {
 }
 .Filtres div {
     margin-right: 24px;
+    flex-wrap: nowrap;
 
 }
 .Filtres p {
@@ -204,6 +201,7 @@ h2 {
 }
 #infobulle i {
     align-items: center;
+    align-self: baseline;
     color: #0065fc;
     border: 1px grey solid;
     font-size: 0.5em;
@@ -212,11 +210,11 @@ h2 {
     line-height: 2em;
     border-radius: 50%;
     margin-right: 12px;
+    margin-left: 9px;
 }
 #infobulle {
     display: flex;
     align-items: center;
-    margin-left: 9px;
 }
 #infobulle p {
     text-align: center;
@@ -308,7 +306,7 @@ article img {
 /*populaire*/
 
 #box7, #box8, #box9 {
-    width: 344px;
+    max-width: 344px;
     height: 144px;
     background-color: white;
     border-radius: 17px;
@@ -367,7 +365,7 @@ aside .star {
 }
 #box10, #box11, #box12, #box13, #box14, #box15 {
     background-color: white;
-    width: 302px;
+    max-width: 302px;
     border-radius: 17px;
     box-shadow: 2px 2px 2px #E3E3E3;
 }
@@ -379,6 +377,12 @@ aside .star {
 }
 #box12 {
     height: 166px;
+}
+#box14 {
+    height: 196px;
+}
+#box15 {
+    height: 209px;
 }
 .activ1, .activ2 {
     display: flex;
@@ -395,7 +399,7 @@ aside .star {
     height: 390px;
 }
 #box11 img {
-    max-height: 181px;
+    height: 181px;
 }
 #box12 img {
     height: 110px;
@@ -431,6 +435,7 @@ footer #menu {
 }
 footer div {
     padding-top: 20px;
+    padding-left: 15px;
     margin-right: auto;
 }
 footer ul {
@@ -456,3 +461,252 @@ footer a:hover {
 .star .fa-star:hover ~ .fa-star {
     color: #F2F2F2;
 }
+
+/*écran moyen*/
+
+@media all and (min-width: 1100px) and (max-width: 1400px) {
+
+    body {
+        max-width: 1024px;
+        margin: auto;
+    }
+    #Section1 {
+        height: 850px;
+    }
+    aside { 
+        padding-left: 20px;
+    }
+    #box7, #box8, #box9 {
+        margin-right: 20px;
+    }
+
+    .activ {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .activ1, .activ2 {
+        max-width: 1024px;
+    }
+    .colonne2 {
+        flex-direction: row;
+    }
+    .activ1 {
+        margin-bottom: 40px;
+    }
+    #box10, #box11, #box12, #box13, #box14, #box15 {
+        height: 237px;
+        margin-right: 45px;
+    }
+    #box10 img, #box11 img, #box12 img, #box13 img, #box14 img, #box15 img {
+        height: 181px;
+    }
+
+}
+@media all and (max-width:1100px) {
+
+    body {
+        width: 100%;
+        margin: auto;
+    }
+
+    /*header*/
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        height: 132px;
+        margin-bottom: 36px;
+        }
+    header #logo {
+        margin-left: 20px;
+    }
+    #logo {
+        float: left;
+        align-self: flex-start;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 20px;
+    } 
+
+    #nav {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        width: 100%;
+        position: relative;
+        order: 1;
+
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
+    nav a {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 50%;
+        justify-content: center;
+        border-bottom: 3px #F2F2F2 solid;
+    }
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px #0065FC solid;
+    }
+    .inscription {
+        height: 45px;
+        margin-right: 20px;
+        margin-top: 30px;
+        justify-self: flex-start;
+    }
+    /*section 0*/
+    #Section0 {
+        width: 90%;
+    }
+
+    /*recherche*/
+
+    #search {
+        display: flex;
+        justify-content: center;
+    }
+    #search .fa-search {
+        display:contents;
+    }
+    #search span {
+        display: none;
+    }
+    button {
+        width: 50px;
+        margin-left: -15px;
+        border-radius: 17px;
+    }
+
+    /*filtres*/
+
+    .Filtres {
+        height: auto;
+        margin-left: 0%;
+    }
+    #titre {
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #titre p {
+        text-align: left;
+    }
+    #infobulle i {
+        margin-left: 0%;
+    }
+
+    /*section1*/
+
+    #Section1 {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    /*populaire*/
+
+    #Section1 aside {
+        width: auto;
+        border-radius: 0px;
+        padding: 20px;
+    }
+    #box7, #box8, #box9 {
+        max-width: 100%;
+    }
+    aside .box {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+    }
+    aside img {
+        width: 40%;
+    }
+    aside .titre {
+        max-width: 100%;
+    }
+    aside .infobox {
+        width: 60%;
+    }
+    #pop {
+        max-width: none;
+    }
+
+    /*hebergement*/
+
+    #Section1 article {
+        width: auto;
+        padding: 20px 20px;
+        margin-right: 0px;
+        background: none;
+    }
+
+    #box1, #box2, #box3, #box4, #box5, #box6 {
+        width: 100%;
+        height: 199px;
+    } 
+    article .box {
+        max-width: 500px;
+        flex-flow: column;
+        margin: auto;
+
+    }
+    article img {
+        width: 98%;
+        margin: 1%;
+    }
+
+    /*activités*/
+
+    .activitg {
+        max-width: 500px;
+        margin: auto;
+    }
+    #section2 {
+        padding: 20px;
+    }
+    #activites {
+        margin: 0px;
+    }
+    .activ, .activ1, .activ2 {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .activ1, .activ2 {
+        width: 100%;
+    }
+    .activ h2 {
+        margin-top: 5px;
+    }
+
+    #box10, #box11, #box12, #box13, #box14, #box15 {
+        width: 100%;
+        max-width: 500px;
+        height: 190px;
+        margin-bottom: 20px;
+    }
+    #box10 img, #box11 img, #box12 img, #box13 img, #box14 img, #box15 img {
+        width: 100%;
+        height: 135px;
+    }
+
+    /*footer*/
+    
+    footer {
+        height: auto;
+    }
+    footer #menu {
+        flex-direction: column;
+    }
+    #menu div {
+        margin-bottom: 50px;
+    }
+}
+
