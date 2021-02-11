@@ -61,7 +61,7 @@ header #logo {
 nav a {
     color: grey;
     text-decoration: none;
-    padding: 48px 28px 0px 28px;
+    padding: 49px 28px 0px 28px;
 }
 nav a:hover {
     color: #0065fc;
