@@ -78,12 +78,12 @@ nav a:hover {
 
 /*body*/
 h1 {
-    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 h2 {
-    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
     font-size: 1.1em;
 }
 
@@ -113,7 +113,7 @@ h2 {
     margin-left: -5px;
     border: 2px #F2F2F2 solid;
     align-items: center;
-    font-family: 'Raleway-Black', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
     color: black;
 }
 
