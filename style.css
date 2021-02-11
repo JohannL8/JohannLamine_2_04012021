@@ -13,7 +13,7 @@ Copyright Johann Lamine
 
 @font-face
 {
-    font-family: 'Raleway_Black';
+    font-family: 'Raleway-Black';
     src:url(font/static/Raleway-Black.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -183,7 +183,7 @@ button {
     width: 3em;
     color: black;
     background-color: #DEEBFF;
-    border: 1px #DEEBFF solid;
+    border: 2px #DEEBFF solid;
     border-left: transparent;
     padding: 0.48em 1em 0.59em 0em;
     border-radius: 1.2em;
